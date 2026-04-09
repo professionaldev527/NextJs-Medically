@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "proImg": "/images/product/1.jpg",
+    "title": "Oxygen Mask",
+    "slug": "Oxygen-Mask",
+    "price": "340.00",
+    "delPrice": "380.00",
+    "brand":"Tools",
+    "size":"Xl"
+  },
+  {
+    "id": 2,
+    "proImg": "/images/product/2.jpg",
+    "title": "Wheelchair",
+    "slug": "Wheelchair",
+    "price": "65.00",
+    "delPrice": "85.00",
+    "brand":"Tools",
+    "size":"XXl"
+  },
+  {
+    "id": 3,
+    "proImg": "/images/product/3.jpg",
+    "title": "Digital Oximeter",
+    "slug": "Digital-Oximeter",
+    "price": "285.00",
+    "delPrice": "300.00",
+    "brand":"Tools",
+    "size":"L"
+  },
+  {
+    "id": 4,
+    "proImg": "/images/product/4.jpg",
+    "title": "Electric Toothbrush",
+    "slug": "Electric-Toothbrush",
+    "price": "176.00",
+    "delPrice": "178.00",
+    "brand":"Tools",
+    "size":"M"
+  },
+  {
+    "id": 5,
+    "proImg": "/images/product/5.jpg",
+    "title": "Mask",
+    "slug": "Mask",
+    "price": "125.00",
+    "delPrice": "130.00",
+    "brand":"Tools",
+    "size":"XXl"
+  },
+  {
+    "id": 6,
+    "proImg": "/images/product/6.jpg",
+    "title": "Brooklyn D76 Glasses",
+    "slug": "Brooklyn-D76-Glasses",
+    "price": "548.00",
+    "delPrice": "600.00",
+    "brand":"Tools",
+    "size":"Xl"
+  },
+  {
+    "id": 7,
+    "proImg": "/images/product/4.jpg",
+    "title": "Electric Toothbrush",
+    "slug": "Toothbrush",
+    "price": "548.00",
+    "delPrice": "600.00",
+    "brand":"Tools",
+    "size":"Xl"
+  }
+
+]
