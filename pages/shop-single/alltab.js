@@ -44,16 +44,8 @@ const ProductTabs = (props) => {
                             <Row>
                                 <Col sm="12">
                                     <div id="Schedule">
-                                    <p>Samsa woke from troubled dreams, he found himself transformed in his bed into a
-                                        horrible vermin. He lay on his armour-like back, and if he lifted his head a
-                                        little he could see his brown belly, slightly domed and divided by arches into
-                                        stiff sections. The bedding was hardly able to cover it and seemed ready to
-                                        slide off any moment. His many legs, pitifully thin compared with the size of
-                                        the rest of him.</p>
-                                    <p>The bedding was hardly able to cover it and seemed ready to slide off any moment.
-                                        His many legs, pitifully thin compared with the size of the rest of himSamsa
-                                        woke from troubled dreams, he found himself transformed in his bed into a
-                                        horrible vermin.</p>
+                                    <p>Our premium medical orthotic brace provides exceptional support and stability for improved recovery. Designed with breathable, latex-free materials, it conforms smoothly to your body shape. The adjustable straps ensure a customizable fit while keeping the support firmly in place throughout daily activities, preventing discomfort and reducing the risk of further injury.</p>
+                                    <p>Clinically tested to assist with rehabilitation, the brace incorporates lightweight structural panels that distribute pressure evenly. Its ergonomic design guarantees maximum mobility without compromising on structural integrity, making it an essential tool for effective physical therapy and long-term joint health.</p>
                                     </div>
                                 </Col>
                             </Row>
@@ -84,7 +76,7 @@ const ProductTabs = (props) => {
                                             </div>
                                         </div>
                                         <div className="review-body">
-                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look.</p>
+                                            <p>This product was incredibly easy to use and provided immediate relief. Excellent quality and the shipping was very fast. Highly recommended for anyone needing reliable support.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -111,7 +103,7 @@ const ProductTabs = (props) => {
                                             </div>
                                         </div>
                                         <div className="review-body">
-                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look.</p>
+                                            <p>A true lifesaver during my recovery period. The material is soft yet sturdy, and the sizing guide was spot on. Very satisfied with this purchase and overall customer care.</p>
                                         </div>
                                     </div>
                                 </div>

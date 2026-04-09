@@ -10599,7 +10599,6 @@ img {
   height: 100%;
   border: 0;
   outline: 0;
-  filter: grayscale(100%);
 }
 .wpo-contact-map-section h2.hidden {
   display: none;

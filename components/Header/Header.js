@@ -51,6 +51,8 @@ const Header = (props) => {
                                             </ul>
                                         </li>
                                         <li><Link onClick={ClickHandler} href="/about">About</Link></li>
+                                        <li><Link onClick={ClickHandler} href="/shop">Shop</Link></li>
+                                        <li><Link onClick={ClickHandler} href="/team">Team</Link></li>
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} href="#">Pages</Link>
                                             <ul className="sub-menu">
@@ -104,50 +106,11 @@ const Header = (props) => {
                             <div className="col-lg-3 col-md-2 col-2">
                                 <div className="header-right">
                                     <div className="mini-cart">
-                                        <button className="cart-toggle-btn" onClick={() => setcartState(!cartActive)}>
+                                        <Link href="/cart" className="cart-toggle-btn">
                                             {" "}
                                             <i className="flaticon-shopping-bag"></i>
                                             <span className="cart-count">{carts.length}</span>
-                                        </button>
-                                        <div className={`mini-cart-content ${cartActive ? "mini-cart-content-toggle" : ""}`}>
-                                            <button className="mini-cart-close" onClick={() => setcartState(!cartActive)}><i className="ti-close"></i></button>
-                                            <div className="mini-cart-items">
-                                                {carts &&
-                                                    carts.length > 0 &&
-                                                    carts.map((catItem, crt) => (
-                                                        <div className="mini-cart-item clearfix" key={crt}>
-                                                            <div className="mini-cart-item-image">
-                                                                <span>
-                                                                    <img src={catItem.proImg} alt="icon" />
-                                                                </span>
-                                                            </div>
-                                                            <div className="mini-cart-item-des">
-                                                                <p>{catItem.title} </p>
-                                                                <span className="mini-cart-item-price">
-                                                                    ${catItem.price} x {" "} {catItem.qty}
-                                                                </span>
-                                                                <span className="mini-cart-item-quantity">
-                                                                    <button
-                                                                        onClick={() =>
-                                                                            props.removeFromCart(catItem.id)
-                                                                        }
-                                                                        className="btn btn-sm btn-danger"
-                                                                    >
-                                                                        <i className="ti-close"></i>
-                                                                    </button>{" "}
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    ))}
-                                            </div>
-                                            <div className="mini-cart-action clearfix">
-                                                <span className="mini-checkout-price">Subtotal: <span> ${totalPrice(carts)}</span></span>
-                                                <div className="mini-btn">
-                                                    <Link href="/checkout" className="view-cart-btn s1">Checkout</Link>
-                                                    <Link href="/cart" className="view-cart-btn">View Cart</Link>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </Link>
                                     </div>
                                     <div className="header-search-form-wrapper">
                                         <div className="cart-search-contact">

@@ -22,9 +22,7 @@ const Footer = (props) => {
                                 <div className="logo widget-title">
                                     <Image src={logo} alt="blog" />
                                 </div>
-                                <p>Mattis inelit neque quis donec eleifnd amet. Amet sed et cursus eu euismod.
-                                    Egestas
-                                    in morbi tristique.</p>
+                                <p>We are committed to providing the best medical care with compassion and expertise. Your health is our priority.</p>
                                 <div className="social-widget">
                                     <ul>
                                         <li><Link onClick={ClickHandler} href="#"><i className="flaticon-facebook-app-symbol"></i></Link></li>
@@ -72,10 +70,9 @@ const Footer = (props) => {
                                 <ul>
                                     <li><i className="flaticon-email"></i><span>medically@gmail.com</span>
                                     </li>
-                                    <li> <i className="flaticon-telephone"></i><span>(704) 555-0127
-                                        <br />(208) 555-0112</span></li>
-                                    <li><i className="flaticon-location-1"></i><span>4517 Washington Ave. <br/>
-                                        Manchter, Kentucky 495</span></li>
+                                    <li> <i className="flaticon-telephone"></i><span>(704) 555-0127</span></li>
+                                    <li><i className="flaticon-location-1"></i><span>123 Medical Avenue <br/>
+                                        New York, NY, USA</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -86,14 +83,12 @@ const Footer = (props) => {
                 <div className="container">
                     <div className="row g-0">
                         <div className="col col-lg-6 col-12">
-                            <p className="copyright"> Copyright &copy; 2025 Medically by <Link onClick={ClickHandler} href="/">wpOceans</Link>.
-                                All
-                                Rights Reserved.</p>
+                            <p className="copyright">Copyright &copy; 2025 Medically. All Rights Reserved.</p>
                         </div>
                         <div className="col col-lg-6 col-12">
                             <ul>
-                                <li><Link onClick={ClickHandler} href="/privace">Privace & Policy</Link></li>
-                                <li><Link onClick={ClickHandler} href="/terms">Terms</Link></li>
+                                <li><Link onClick={ClickHandler} href="/privacy-policy">Privacy &amp; Policy</Link></li>
+                                <li><Link onClick={ClickHandler} href="/terms-and-conditions">Terms &amp; Conditions</Link></li>
                                 <li><Link onClick={ClickHandler} href="/about">About us</Link></li>
                                 <li><Link onClick={ClickHandler} href="/faq">FAQ</Link></li>
                             </ul>

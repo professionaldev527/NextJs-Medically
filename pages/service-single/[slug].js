@@ -33,20 +33,8 @@ const ServiceSinglePage = (props) => {
                             <div>
                                 <Image src={serviceDetails?.simage} alt="" />
                                 <h2>{serviceDetails?.title}</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus dis posuere amet tincidunt
-                                    commodo, velit. Ipsum, hac nibh fermentum nisi, platea condimentum cursus velit dui.
-                                    Massa
-                                    volutpat odio facilisis purus sit elementum. Non, sed velit dictum quam. Id risus
-                                    pharetra
-                                    est, at rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin diam, elit sit.
-                                    Et
-                                    nisi in libero facilisis sed est. Elit curabitur amet risus bibendum. Posuere et eget
-                                    orci,
-                                    tempor enim.</p>
-                                <p>Hac nibh fermentum nisi, platea condimentum cursus velit dui. Massa volutpat odio
-                                    facilisis
-                                    purus sit elementum. Non, sed velit dictum quam. Id risus pharetra est, at rhoncus, nec
-                                    ullamcorper tincidunt. Id aliquet duis sollicitudin diam, elit sit.</p>
+                                <p>{serviceDetails?.intro}</p>
+                                <p>{serviceDetails?.body}</p>
                             </div>
                             <div className="row">
                                 <div className="col-lg-6 col-12">
@@ -58,29 +46,16 @@ const ServiceSinglePage = (props) => {
                             </div>
                             <div>
                                 <h3>Our Capabilities</h3>
-                                <p>Massa volutpat odio facilisis purus sit elementum. Non, sed velit dictum quam. Id risus
-                                    pharetra est, at rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin diam.
-                                </p>
+                                <p>{serviceDetails?.capabilitiesIntro}</p>
                                 <ul>
-                                    <li>Non saed velit dictum quam risus pharetra esta.</li>
-                                    <li>Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt.</li>
-                                    <li>Hac nibh fermentum nisi, platea condimentum cursus.</li>
-                                    <li>Massa volutpat odio facilisis purus sit elementum.</li>
-                                    <li>Elit curabitur amet risus bibendum.</li>
+                                    {serviceDetails?.capabilities?.map((cap, i) => (
+                                        <li key={i}>{cap}</li>
+                                    ))}
                                 </ul>
                             </div>
                             <div>
-                                <h3>Our approach</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat suspendisse aenean
-                                    tellus augue morbi risus. Sit morbi vitae morbi sed urna sed purus. Orci facilisi eros
-                                    sed pellentesque. Risus id sed tortor sed scelerisque. Vestibulum elit elementum, magna
-                                    id viverra non, velit. Pretium, eros, porttitor fusce auctor vitae id. Phasellus
-                                    scelerisque nibh eleifend vel enim mauris purus. Rutrum vel sem adipiscing nisi
-                                    vulputate molestie scelerisque molestie ultrices. Eu, fusce vulputate diam interdum
-                                    morbi ac a.
-                                </p>
-
+                                <h3>Our Approach</h3>
+                                <p>{serviceDetails?.approach}</p>
                             </div>
                             <div className="other-service">
                                 <h3>Related Service</h3>

@@ -31,14 +31,8 @@ const About2 = (props) => {
                             <div className="content">
                                 <h2>About Medically</h2>
                                 <h3>Your Smile & Happiness Is Our Mission</h3>
-                                <p>Our health and hospital policy encompasses the strategies, guidelines, and practices
-                                    that
-                                    technology companies use to achieve their goals and objectives. The policies may
-                                    vary
-                                    depending on the company's size, market position, and competitive landscape. Commodo
-                                    erat amet vitae consectetur consectetur feugiat.</p>
-                                <p>Tellus viverra eu risus ut ipsum magna sed odio elit. Sed sem purus tincidunt
-                                    condimentum amet condimentum massa. Nunc vel nascetur id cras.</p>
+                                <p>Founded on decades of medical excellence, Medically brings together leading specialists across six core departments to deliver comprehensive, evidence-based care. From preventive check-ups to complex surgical procedures, our integrated team ensures seamless, high-quality treatment at every stage of your health journey.</p>
+                                <p>Our patient-first philosophy means we listen carefully, diagnose precisely, and treat effectively — working alongside you to achieve lasting wellness and an outstanding quality of life.</p>
                                 <div className="ceo">
                                     <div>
                                         <h4>Savannah Nguyen</h4>

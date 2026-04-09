@@ -80,17 +80,10 @@ const about = (props) => {
               <h2>About Medically</h2>
               <h3>Your Smile & Happiness Is Our Mission</h3>
               <p>
-                Our health and hospital policy encompasses the strategies,
-                guidelines, and practices that technology companies use to
-                achieve their goals and objectives. The policies may vary
-                depending on the company's size, market position, and
-                competitive landscape. Commodo erat amet vitae consectetur
-                consectetur feugiat.
+                At Medically, we are committed to delivering exceptional, patient-centered healthcare across a wide range of specialties. Our team of board-certified physicians, surgeons, and specialists combines decades of clinical expertise with the most advanced diagnostic and therapeutic technologies available today.
               </p>
               <p>
-                Tellus viverra eu risus ut ipsum magna sed odio elit. Sed sem
-                purus tincidunt condimentum amet condimentum massa. Nunc vel
-                nascetur id cras.
+                We believe that every patient deserves individualized attention, transparent communication, and a care plan built around their unique health needs — from the first consultation through to a full recovery.
               </p>
               <div className="ceo">
                 <div>

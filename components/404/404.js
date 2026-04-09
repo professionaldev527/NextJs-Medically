@@ -20,8 +20,8 @@ const Error = (props) => {
                             </div>
                             <div className="error-message">
                                 <h3>Oops! Page Not Found!</h3>
-                                <p>We’re sorry but we can’t seem to find the page you requested. This might be because you have typed the web address incorrectly.</p>
-                                <Link onClick={ClickHandler} href="/home" className="theme-btn"> Back to home</Link>
+                                <p>We're sorry, but the page you are looking for does not exist. It might have been moved or deleted. Please return to our homepage to explore our medical services and get the care you need.</p>
+                                <Link onClick={ClickHandler} href="/home" className="theme-btn"> Back To Home</Link>
                             </div>
                         </div>
                     </div>

@@ -37,13 +37,12 @@ const Product = ({ item, addToCart }) => {
             <span className="old">${item.delPrice}</span>
           </div>
           <p>
-            There are many variations of passages of Lorem Ipsum and available,
-            but the majority have suffered alteration in somey form.
+            Designed for durability and optimal patient comfort, this medical equipment is thoroughly tested and certified for clinic or home use.
           </p>
           <ul>
-            <li>Going through the cites of the word in classNameical.</li>
-            <li>There are many variations of passages.</li>
-            <li>Making it look like readable and spoken English.</li>
+            <li>High-quality materials ensure long-lasting reliability.</li>
+            <li>Approved and recommended by healthcare professionals.</li>
+            <li>Easy to clean and maintain for hygienic environment.</li>
           </ul>
           <div className="product-option">
             <div className="product-row">

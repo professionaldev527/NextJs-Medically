@@ -26,9 +26,9 @@ const hero = () => {
         <h2>We are Here for You</h2>
         <h3>Helping People Lead Healthy & Happy Lives</h3>
         <p>
-          Nisi molestie fusce quis eget vitae. Aliquam senectus id placerat
-          egestas sed sed venenatis nisl. Tincidunt faucibus facilisi vestibulum
-          et ut congue in eget. Augue purus hendrerit tempus consequat ut sit.
+          We provide high-quality medical services using state-of-the-art technology. 
+          Our expert team of doctors is dedicated to offering personalized care to ensure 
+          your well-being. Schedule an appointment today and take the first step towards a healthier life.
         </p>
         <Link onClick={ClickHandler} className="theme-btn" href="/about">
           Make Appointment

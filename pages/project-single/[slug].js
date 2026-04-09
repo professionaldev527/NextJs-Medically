@@ -33,16 +33,8 @@ const ProjectSingle = (props) => {
                     <div className="row">
                         <div className="col-lg-7 col-12">
                             <h2>{ProjectSingle?.title}</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus dis posuere amet tincidunt
-                                commodo, velit. Ipsum, hac nibh fermentum nisi, platea condimentum cursus velit dui. Massa
-                                volutpat odio facilisis purus sit elementum. Non, sed velit dictum quam. Id risus pharetra
-                                est, at rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin diam, elit sit. Et
-                                nisi in libero facilisis sed est. Elit curabitur amet risus bibendum. Posuere et eget orci,
-                                tempor enim.Non, sed velit dictum quam. Id risus pharetra est, at rhoncus, nec ullamcorper
-                                tincidunt.</p>
-                            <p>Hac nibh fermentum nisi, platea condimentum cursus velit dui. Massa voluat odio facilisis
-                                purus sit elementum. Non, sed velit dictum quam. Id risus pharetra est, at rhoncus, nec
-                                ullamcorper tincidunt. Id aliquet duis sollicitudin diam, elit sit.</p>
+                            <p>{ProjectSingle?.intro}</p>
+                            <p>{ProjectSingle?.body}</p>
                         </div>
                         <div className="col-lg-5 col-12">
                             <table>
@@ -53,19 +45,19 @@ const ProjectSingle = (props) => {
                                     </tr>
                                     <tr>
                                         <th>Client :</th>
-                                        <td>Robert William</td>
+                                        <td>{ProjectSingle?.client}</td>
                                     </tr>
                                     <tr>
                                         <th>Surgeon:</th>
-                                        <td>Harry Johnson</td>
+                                        <td>{ProjectSingle?.surgeon}</td>
                                     </tr>
                                     <tr>
                                         <th>Category :</th>
-                                        <td>Surgery</td>
+                                        <td>{ProjectSingle?.category}</td>
                                     </tr>
                                     <tr>
-                                        <th>Tag :</th>
-                                        <td>Pediatric, Pain</td>
+                                        <th>Tags :</th>
+                                        <td>{ProjectSingle?.tags}</td>
                                     </tr>
                                     <tr>
                                         <th>Date :</th>
@@ -88,30 +80,20 @@ const ProjectSingle = (props) => {
                         </div>
                     </div>
                     <div className="quote">
-                        <h4>"Amazing looking theme and instantly turns your application into a great looking one. Really
-                            shows that pro_ fissional built this theme up. Very happy with the way the theme looks ."</h4>
-                        <p>Robert - <span>Yellow Theme</span></p>
+                        <h4>{ProjectSingle?.quote}</h4>
+                        <p>{ProjectSingle?.quoteAuthor} - <span>{ProjectSingle?.quoteRole}</span></p>
                     </div>
                     <div className="row">
                         <div className="col-lg-6 col-12 strategies s2">
                             <h2>Our Strategies</h2>
-                            <p>Massa volutpat odio facilisis purus sit elementum. Nonsed velit dictum quam. Id risus
-                                pharetra est, at rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin diam.</p>
+                            <p>{ProjectSingle?.strategiesIntro}</p>
                             <ul>
-                                <li>Non saed velit dictum quam risus pharetra esta.</li>
-                                <li>Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt.</li>
-                                <li>Hac nibh fermentum nisi, platea condimentum cursus.</li>
-                                <li>Massa volutpat odio facilisis purus sit elementum.</li>
+                                {ProjectSingle?.strategies?.map((s, i) => <li key={i}>{s}</li>)}
                             </ul>
                         </div>
                         <div className="col-lg-6 col-12 strategies">
-                            <h2>Our approach</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat suspendisse aenean tellus
-                                augue morbi risus. Sit morbi vitae morbi sed urna sed purus. Orci facilisi eros sed
-                                pellentesque. Risus id sed tortor sed scelerisque. Vestibulum elit elementum, magna id
-                                viverra non, velit. Pretium, eros, porttitor fusce auctor. Phasellus scelerisque nibh
-                                eleifend vel enim mauris purus. Rutrum vel sem adipiscing nisi vulputate molestie
-                                scelerisque molestie ultrices.</p>
+                            <h2>Our Approach</h2>
+                            <p>{ProjectSingle?.approach}</p>
                         </div>
                     </div>
                     <div className="row">
@@ -124,25 +106,17 @@ const ProjectSingle = (props) => {
                     </div>
                     <div className="row">
                         <div className="col-lg-6 col-12 strategies s3">
-                            <h2>Received Goals</h2>
-                            <p>Tristique donec pellentesque malesuada enim viverra. Aliquam tortor id fringilla in tincidunt
-                                ipsum non molestie. Mattis vitae nulla in nulla habitant purus lacus nibh.</p>
+                            <h2>Goals Achieved</h2>
+                            <p>{ProjectSingle?.goalsIntro}</p>
                             <ul>
-                                <li>Feugiat tincidunt arcu blandit et maecenas est. </li>
-                                <li>Eget a in massa scelerisque ut etiam pharetra nascetur</li>
-                                <li>Integer laoreet vive nunc aliquam commodo integer arcu.</li>
-                                <li>Fermentum feugiat varius faucibus habitasse.</li>
+                                {ProjectSingle?.goals?.map((g, i) => <li key={i}>{g}</li>)}
                             </ul>
                         </div>
-                        <div className="col-lg-6 col-12 strategies s3 ">
-                            <h2>Result</h2>
-                            <p>Nibh arcu enim amet pellentesque. Nisi quam enim re nec amet in. Leo pretium dolor sed erat
-                                dignissim. Integer laoreet viverra nunc aliquam commodo integer arcu.</p>
+                        <div className="col-lg-6 col-12 strategies s3">
+                            <h2>Results</h2>
+                            <p>{ProjectSingle?.resultsIntro}</p>
                             <ul>
-                                <li>Mattis vitae nulla in nulla habitant purus.</li>
-                                <li>Amet nunc augue nisi consectetur ac laoreet elit vulputate.</li>
-                                <li>Hac nibh fermentum platea condimentum cursus.</li>
-                                <li>Massa volutpat odio facilisis purus sit elementum.</li>
+                                {ProjectSingle?.results?.map((r, i) => <li key={i}>{r}</li>)}
                             </ul>
                         </div>
                     </div>

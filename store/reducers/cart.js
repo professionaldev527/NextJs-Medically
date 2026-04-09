@@ -59,7 +59,7 @@ export const cartReducer = (state = init, action) => {
       };
 
     case INCREMENT_QUANTITY:
-      const inc_productId = action.product_id.id;
+      const inc_productId = action.product_id;
       const new_cart = state.cart.reduce((cartAcc, product) => {
         if (product.id === inc_productId) {
           cartAcc.push({
@@ -74,7 +74,7 @@ export const cartReducer = (state = init, action) => {
       return { ...state, cart: new_cart };
 
     case DECREMENT_QUANTITY:
-      const decProductId = action.product_id.id;
+      const decProductId = action.product_id;
       const decCart = state.cart.reduce((cartAcc, product) => {
         if (product.id === decProductId) {
           cartAcc.push({

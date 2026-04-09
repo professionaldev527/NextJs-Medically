@@ -13,23 +13,23 @@ const testimonials = [
     {
         id: '01',
         img: Img1,
-        Des: "Purus egeto consectur massa amert. Hactor bodiam suspendie faucibus posuere dignissim amet to atthe. Vitaer of sollicitudin mauris erat odio maecenas mattis praesent.Eget vitaoe.",
+        Des: "After years of chronic back pain, Dr. Jerome Bell's orthopedic team gave me my life back. The care was thorough, the surgery minimally invasive, and recovery was faster than I ever imagined. I can't recommend Medically enough.",
         title: 'Kristin Watson',
-        sub: "Content Writer",
+        sub: "Orthopedic Patient",
     },
     {
         id: '02',
         img: Img2,
-        Des: "Purus egeto consectur massa amert. Hactor bodiam suspendie faucibus posuere dignissim amet to atthe. Vitaer of sollicitudin mauris erat odio maecenas mattis praesent.Eget vitaoe.",
+        Des: "Dr. Leslie Alexander's compassionate approach to gynecological care made all the difference during a challenging time. She explained everything clearly, involved me in every decision, and the outcome exceeded my expectations.",
         title: 'Armani Fisher',
-        sub: "Content Writer",
+        sub: "Gynecology Patient",
     },
     {
         id: '03',
         img: Img3,
-        Des: "Purus egeto consectur massa amert. Hactor bodiam suspendie faucibus posuere dignissim amet to atthe. Vitaer of sollicitudin mauris erat odio maecenas mattis praesent.Eget vitaoe.",
+        Des: "The rehabilitation program Dr. Alexander Leslie designed for my stroke recovery was exceptional. The team's dedication, the state-of-the-art equipment, and their encouragement helped me regain independence far sooner than expected.",
         title: 'Rebeca Connelly',
-        sub: "Content Writer",
+        sub: "Rehabilitation Patient",
     },
 
 

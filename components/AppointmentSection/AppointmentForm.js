@@ -1,6 +1,25 @@
 
 import React, { useState } from 'react';
 
+// Department → Doctor mapping aligned with Services.js and team.js
+const departmentDoctors = {
+    'dental-care': [{ value: 'marlene-henry', label: 'Dr. Marlene Henry' }],
+    'pharmacology': [{ value: 'dianne-russell', label: 'Dr. Dianne Russell' }],
+    'orthopedic': [{ value: 'jerome-bell', label: 'Dr. Jerome Bell' }],
+    'gyneological': [{ value: 'leslie-alexander', label: 'Dr. Leslie Alexander' }],
+    'rehabilitation': [{ value: 'alexander-leslie', label: 'Dr. Alexander Leslie' }],
+    'heart-surgery': [{ value: 'cody-fisher', label: 'Dr. Cody Fisher' }],
+};
+
+const departments = [
+    { value: 'dental-care', label: 'Dental Care' },
+    { value: 'pharmacology', label: 'Pharmacology' },
+    { value: 'orthopedic', label: 'Orthopedic' },
+    { value: 'gyneological', label: 'Gyneological' },
+    { value: 'rehabilitation', label: 'Rehabilitation' },
+    { value: 'heart-surgery', label: 'Heart Surgery' },
+];
+
 const AppointmentForm = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -16,11 +35,14 @@ const AppointmentForm = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormData((prevData) => ({
-            ...prevData,
-            [name]: value,
-        }));
-        validate({ [name]: value });
+        // Reset doctor when department changes
+        if (name === 'department') {
+            setFormData((prev) => ({ ...prev, department: value, doctor: '' }));
+            validate({ department: value });
+        } else {
+            setFormData((prev) => ({ ...prev, [name]: value }));
+            validate({ [name]: value });
+        }
     };
 
     const validate = (fieldValues = formData) => {
@@ -55,30 +77,23 @@ const AppointmentForm = () => {
         if (validate()) {
             setIsSubmitting(true);
             setTimeout(() => {
-                if (Math.random() > 0.5) {
-                    setSubmitted(true);
-                    setIsSubmitting(false);
-                    handleReset();
-                } else {
-                    setSubmissionError('Submission failed. Please try again.');
-                    setIsSubmitting(false);
-                }
-            }, 2000);
+                setSubmitted(true);
+                setIsSubmitting(false);
+                handleReset();
+            }, 1500);
         }
     };
 
     const handleReset = () => {
-        setFormData({
-            name: '',
-            email: '',
-            department: '',
-            doctor: '',
-        });
+        setFormData({ name: '', email: '', department: '', doctor: '' });
         setErrors({});
         setSubmitted(false);
         setSubmissionError(null);
     };
 
+    const availableDoctors = formData.department
+        ? departmentDoctors[formData.department] || []
+        : [];
 
     return (
         <form onSubmit={handleSubmit}>
@@ -119,9 +134,11 @@ const AppointmentForm = () => {
                         onBlur={() => validate({ department: formData.department })}
                     >
                         <option value="">Department</option>
-                        <option value="subject1">Subject 1</option>
-                        <option value="subject2">Subject 2</option>
-                        <option value="subject3">Subject 3</option>
+                        {departments.map((dept) => (
+                            <option key={dept.value} value={dept.value}>
+                                {dept.label}
+                            </option>
+                        ))}
                     </select>
                     {errors.department && <p className="error">{errors.department}</p>}
                 </div>
@@ -133,19 +150,23 @@ const AppointmentForm = () => {
                         value={formData.doctor}
                         onChange={handleChange}
                         onBlur={() => validate({ doctor: formData.doctor })}
+                        disabled={!formData.department}
                     >
-                        <option value="">Doctor</option>
-                        <option value="subject1">Subject 1</option>
-                        <option value="subject2">Subject 2</option>
-                        <option value="subject3">Subject 3</option>
+                        <option value="">
+                            {formData.department ? 'Select Doctor' : 'Select a department first'}
+                        </option>
+                        {availableDoctors.map((doc) => (
+                            <option key={doc.value} value={doc.value}>
+                                {doc.label}
+                            </option>
+                        ))}
                     </select>
                     {errors.doctor && <p className="error">{errors.doctor}</p>}
                 </div>
                 <div className="form_item">
-                    <input className="form_btn" type="submit" value="Send" disabled={isSubmitting} />
+                    <input className="form_btn" type="submit" value={isSubmitting ? 'Sending...' : 'Send'} disabled={isSubmitting} />
                 </div>
-                {isSubmitting && <div className="loading_message">Submitting...</div>}
-                {submitted && <div className="success_message">Form submitted successfully!</div>}
+                {submitted && <div className="success_message">Appointment request sent successfully!</div>}
                 {submissionError && <div className="error_message">{submissionError}</div>}
             </div>
         </form>

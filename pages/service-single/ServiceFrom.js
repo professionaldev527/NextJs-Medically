@@ -114,9 +114,9 @@ const ServiceFrom = () => {
                         className="input-fild"
                     >
                         <option value="">Department</option>
-                        <option value="Subject 1">Subject 1</option>
-                        <option value="Subject 2">Subject 2</option>
-                        <option value="Subject 3">Subject 3</option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Pediatrics">Pediatrics</option>
                     </select>
                     <span className="error">{formErrors.departmentError}</span>
                 </div>
@@ -129,9 +129,9 @@ const ServiceFrom = () => {
                         className="input-fild"
                     >
                         <option value="">Choose Doctor</option>
-                        <option value="Doctor 1">Doctor 1</option>
-                        <option value="Doctor 2">Doctor 2</option>
-                        <option value="Doctor 3">Doctor 3</option>
+                        <option value="Dr. Sarah Jenkins">Dr. Sarah Jenkins</option>
+                        <option value="Dr. Michael Chen">Dr. Michael Chen</option>
+                        <option value="Dr. Emily Parker">Dr. Emily Parker</option>
                     </select>
                     <span className="error">{formErrors.doctorError}</span>
                 </div>

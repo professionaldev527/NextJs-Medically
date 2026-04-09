@@ -28,8 +28,7 @@ const ProcessSection = (props) => {
                                 </div>
                                 <div className="text">
                                     <h3>Make Appointment</h3>
-                                    <p>Amet usem turpis vestm hendrerit vestibulum molestie quis. Egestas ultricies
-                                        at placerat.</p>
+                                    <p>Book your visit online or by phone in minutes. Choose your preferred specialist, department, and a time that fits your schedule — no long waits.</p>
                                 </div>
                             </div>
                         </div>
@@ -41,8 +40,7 @@ const ProcessSection = (props) => {
                                 </div>
                                 <div className="text">
                                     <h3>Get Consultant</h3>
-                                    <p>Amet usem turpis vestm hendrerit vestibulum molestie quis. Egestas ultricies
-                                        at placerat.</p>
+                                    <p>Meet with an experienced physician who listens carefully, reviews your history, and provides an accurate diagnosis with a clear, personalized treatment plan.</p>
                                 </div>
                             </div>
                         </div>
@@ -54,8 +52,7 @@ const ProcessSection = (props) => {
                                 </div>
                                 <div className="text">
                                     <h3>Take Treatment</h3>
-                                    <p>Amet usem turpis vestm hendrerit vestibulum molestie quis. Egestas ultricies
-                                        at placerat.</p>
+                                    <p>Receive world-class treatment delivered by specialists using cutting-edge technology, evidence-based protocols, and a compassionate, patient-first approach.</p>
                                 </div>
                             </div>
                         </div>
@@ -67,8 +64,7 @@ const ProcessSection = (props) => {
                                 </div>
                                 <div className="text">
                                     <h3>Get Relief</h3>
-                                    <p>Amet usem turpis vestm hendrerit vestibulum molestie quis. Egestas ultricies
-                                        at placerat.</p>
+                                    <p>Experience lasting recovery supported by follow-up care, rehabilitation guidance, and ongoing health monitoring to ensure you stay healthy and thriving.</p>
                                 </div>
                             </div>
                         </div>

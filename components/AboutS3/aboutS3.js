@@ -14,15 +14,8 @@ const aboutS3 = () => {
                             <div className="content">
                                 <h2>About Medically</h2>
                                 <h3>Your Smile & Happiness Is Our Mission</h3>
-                                <p>Our health and hospital policy encompasses the strategies, guidelines, and practices
-                                    that
-                                    technology companies use to achieve their goals and objectives. The policies may
-                                    vary
-                                    depending on the company's size, market position, and competitive landscape.
-                                    Commodo
-                                    erat amet vitae consectetur consectetur feugiat.</p>
-                                <p>Tellus viverra eu risus ut ipsum magna sed odio elit. Sed sem purus tincidunt
-                                    condimentum amet condimentum massa. Nunc vel nascetur id cras.</p>
+                                <p>Medically was established with a clear mission: to make world-class medical care accessible, compassionate, and effective for every patient. Our multidisciplinary approach connects specialists across dental care, orthopedics, cardiology, gynecology, pharmacology, and rehabilitation under one trusted roof.</p>
+                                <p>Every decision we make is driven by the best available clinical evidence and a deep respect for the individuals and families who place their health in our hands.</p>
                                 <div className="ceo">
                                     <div>
                                         <h4>Savannah Nguyen</h4>

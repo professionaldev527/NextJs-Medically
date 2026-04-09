@@ -16,7 +16,7 @@ const blogs = [
     slug: "Why-Industry-Are-A-Juicy-Target-For-Cyberattack",
     screens: blogImg1,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis, libero,",
+      "Learn about the latest medical procedures and surgical practices from our expert team of professionals, ensuring you are well-prepared.",
     author: "Anne William",
     create_at: "Sep 03, 2025",
     blogSingleImg: blogSingleImg1,
@@ -34,7 +34,7 @@ const blogs = [
     slug: "Why-Industry-Are-A-Juicy-Target-For",
     screens: blogImg2,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis, libero,",
+      "Discover the newest methods in patient care and recovery techniques with our latest research and professional advice.",
     author: "Anne William",
     create_at: "Sep 03, 2025",
     blogSingleImg: blogSingleImg2,
@@ -52,7 +52,7 @@ const blogs = [
     slug: "Why-Industry-Are-A-Juicy",
     screens: blogImg3,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis, libero,",
+      "Explore in-depth approaches to enhancing mobility and minimizing risks before and after major surgical operations.",
     author: "Anne William",
     create_at: "Sep 03, 2025",
     blogSingleImg: blogSingleImg3,

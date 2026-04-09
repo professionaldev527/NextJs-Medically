@@ -13,7 +13,7 @@ const CtaSection = (props) => {
                         </div>
                         <div className="text">
                             <h2>Available 24/7</h2>
-                            <h3>(208) 555-0112</h3>
+                            <h3>(704) 555-0127</h3>
                         </div>
                     </div>
                     <div className="shape-icon">
