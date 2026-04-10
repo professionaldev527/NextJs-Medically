@@ -30,8 +30,9 @@ const hero = () => {
           Our expert team of doctors is dedicated to offering personalized care to ensure 
           your well-being. Schedule an appointment today and take the first step towards a healthier life.
         </p>
-        <Link onClick={ClickHandler} className="theme-btn" href="/about">
+        <Link onClick={ClickHandler} className="theme-btn" href="/home#appointment-form">
           Make Appointment
+          <i className="flaticon-right-arrow" style={{ marginLeft: '8px' }}></i>
         </Link>
       </div>
       <div className="image_content">

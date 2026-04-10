@@ -7,7 +7,7 @@ import PageTitle from '../../components/pagetitle/PageTitle'
 import Footer from '../../components/footer/Footer';
 import ContactForm from '../service-single/ServiceFrom';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import logo from '/public/images/logo-2.svg'
+import logo from '../../public/images/logo-2.svg'
 import Arrow from '/public/images/team-single/arrow.svg'
 import Image from 'next/image';
 

@@ -14,7 +14,7 @@ import BlogSection from '../../components/BlogSection/BlogSection';
 import CtafromSection from '../../components/CtafromSection/CtafromSection';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import Logo from '/public/images/logo.svg'
+import Logo from '../../public/images/logo.svg'
 
 const HomePage = () => {
     return (

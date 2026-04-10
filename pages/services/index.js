@@ -5,7 +5,7 @@ import ServiceSection from '../../components/ServiceSection/ServiceSection';
 import CtafromSection from '../../components/CtafromSection/CtafromSection';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import Logo from '/public/images/logo-2.svg'
+import Logo from '../../public/images/logo-2.svg'
 
 
 const ServicePage = () => {

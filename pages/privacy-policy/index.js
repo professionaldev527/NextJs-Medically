@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/pagetitle/PageTitle';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import logo from '/public/images/logo-2.svg';
+import logo from '../../../public/images/logo-2.svg';
 
 const PrivacyPolicyPage = () => {
     return (

@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import blogs from '../../api/blogs'
 import BlogSingle from '../../components/BlogDetails/BlogSingle.js'
 import Footer from '../../components/footer/Footer';
-import logo from '/public/images/logo-2.svg';
+import logo from '../../public/images/logo-2.svg';
 
 const BlogDetails = (props) => {
 

@@ -4,7 +4,7 @@ import BlogList from '../../components/BlogList/BlogList.js'
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/footer/Footer';
-import logo from '/public/images/logo-2.svg';
+import logo from '../../public/images/logo-2.svg';
 
 const BlogPageLeft = () => {
     return (

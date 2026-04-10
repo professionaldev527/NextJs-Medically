@@ -12,7 +12,7 @@ import CtafromSection from '../../components/CtafromSection/CtafromSection';
 import BlogSection from '../../components/BlogSection/BlogSection';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import Logo from '/public/images/logo-2.svg'
+import Logo from '../../public/images/logo-2.svg'
 
 const HomePage2 = () => {
     return (

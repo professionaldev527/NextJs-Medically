@@ -7,7 +7,7 @@ import Projects from '../../api/projects';
 import ServiceFrom from '../service-single/ServiceFrom';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar'
-import logo from '/public/images/logo-2.svg'
+import logo from '../../public/images/logo-2.svg'
 import Psing1 from '/public/images/project-single/img-1.jpg'
 import Psing2 from '/public/images/project-single/img-2.jpg'
 import Image from 'next/image';

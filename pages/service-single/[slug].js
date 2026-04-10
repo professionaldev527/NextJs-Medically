@@ -10,7 +10,7 @@ import ContactForm from './ServiceFrom';
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import simg1 from '/public/images/service-single/img-1.jpg'
 import simg2 from '/public/images/service-single/img-2.jpg'
-import logo from '/public/images/logo-2.svg'
+import logo from '../../public/images/logo-2.svg'
 import Image from 'next/image';
 
 const ServiceSinglePage = (props) => {
