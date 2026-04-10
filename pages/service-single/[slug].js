@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import Services from '../../api/Services';
+import Services from '../../mock-api/Services';
 import ServiceSidebar from './sidebar'
 import Navbar from '../../components/Navbar/Navbar'
 import PageTitle from '../../components/pagetitle/PageTitle'

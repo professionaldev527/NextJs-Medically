@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Link from "next/link";
 import about from "../../public/images/blog/about-widget.jpg";
-import blogs from "../../api/blogs";
+import blogs from '../../mock-api/blogs';
 import Image from "next/image";
 
 const SubmitHandler = (e) => {

@@ -3,7 +3,7 @@ import PageTitle from '../../components/pagetitle/PageTitle'
 import BlogSingle from '../../components/BlogDetails/BlogSingle.js'
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import { useRouter } from 'next/router'
-import blogs from '../../api/blogs'
+import blogs from '../../mock-api/blogs'
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/footer/Footer';
 

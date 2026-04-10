@@ -6,7 +6,7 @@ import blog5 from "../../public/images/blog-details/comments-author/img-3.jpg";
 import blog6 from "../../public/images/blog-details/author.jpg";
 import gl1 from "../../public/images/blog/img-1.jpg";
 import gl2 from "../../public/images/blog/img-2.jpg";
-import blogs from "../../api/blogs";
+import blogs from '../../mock-api/blogs';
 import { useRouter } from "next/router";
 import BlogSidebar from "../BlogSidebar/BlogSidebar.js";
 import Image from "next/image";

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { useRouter } from 'next/router'
-import blogs from '../../api/blogs'
+import blogs from '../../mock-api/blogs'
 import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/pagetitle/PageTitle'
 import BlogSingle from '../../components/BlogDetails/BlogSingle'

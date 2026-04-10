@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Teams from "../../api/team";
+import Teams from '../../mock-api/team';
 import SectionTitle from "../SectionTitle/SectionTitle";
 import borderShape from '/public/images/team/border-shape.svg'
 import Image from "next/image";

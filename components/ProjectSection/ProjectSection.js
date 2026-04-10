@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Projects from "../../api/projects";
+import Projects from '../../mock-api/projects';
 import SectionTitle from "../SectionTitle/SectionTitle";
 import Image from "next/image";
 

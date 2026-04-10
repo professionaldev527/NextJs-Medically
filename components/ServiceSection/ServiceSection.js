@@ -1,7 +1,7 @@
 import React from "react";
 import Link from 'next/link'
 import SectionTitle from "../SectionTitle/SectionTitle";
-import Services from "../../api/Services";
+import Services from '../../mock-api/Services';
 
 
 

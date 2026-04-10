@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link'
 import BlogSidebar from '../BlogSidebar/BlogSidebar.js'
 import VideoModal from '../ModalVideo/VideoModal'
-import blogs from '../../api/blogs'
+import blogs from '../../mock-api/blogs'
 import Image from 'next/image.js';
 
 

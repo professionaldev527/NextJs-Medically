@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import SectionTitle from "../SectionTitle/SectionTitle";
-import blogs from '../../api/blogs'
+import blogs from '../../mock-api/blogs'
 import Image from "next/image";
 
 const ClickHandler = () => {

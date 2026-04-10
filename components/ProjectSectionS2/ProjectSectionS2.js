@@ -4,7 +4,7 @@ import Link from "next/link";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 
-import Projects from "../../api/projects";
+import Projects from '../../mock-api/projects';
 import SectionTitle from "../SectionTitle/SectionTitle";
 import Image from "next/image";
 
