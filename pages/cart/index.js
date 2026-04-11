@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from "react";
 import Navbar from '../../components/Navbar/Navbar';
-import PageTitle from "../../components/pagetitle/PageTitle";
-import Scrollbar from "../../components/scrollbar/scrollbar";
+import PageTitle from "../../components/Pagetitle/PageTitle";
+import Scrollbar from "../../components/Scrollbar/scrollbar";
 import CalculateShipping from "./CalculateShipping";
-import Footer from '../../components/footer/Footer';
+import Footer from '../../components/Footer/Footer';
 import Link from "next/link";
 import { connect } from "react-redux";
 import { totalPrice } from "../../utils";

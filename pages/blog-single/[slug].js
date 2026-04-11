@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import Navbar from '../../components/Navbar/Navbar'
-import PageTitle from '../../components/pagetitle/PageTitle'
-import Scrollbar from '../../components/scrollbar/scrollbar'
+import PageTitle from '../../components/Pagetitle/PageTitle'
+import Scrollbar from '../../components/Scrollbar/scrollbar'
 import { useRouter } from 'next/router'
 import blogs from '../../mock-api/blogs'
 import BlogSingle from '../../components/BlogDetails/BlogSingle.js'
-import Footer from '../../components/footer/Footer';
+import Footer from '../../components/Footer/Footer';
 import logo from '../../public/images/logo-2.svg';
 
 const BlogDetails = (props) => {

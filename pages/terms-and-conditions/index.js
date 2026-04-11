@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import PageTitle from '../../components/pagetitle/PageTitle';
-import Footer from '../../components/footer/Footer';
-import Scrollbar from '../../components/scrollbar/scrollbar';
+import PageTitle from '../../components/Pagetitle/PageTitle';
+import Footer from '../../components/Footer/Footer';
+import Scrollbar from '../../components/Scrollbar/scrollbar';
 import logo from '../../../public/images/logo-2.svg';
 
 const TermsAndConditionsPage = () => {

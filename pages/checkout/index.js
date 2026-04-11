@@ -1,10 +1,10 @@
 import React, {Fragment} from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import PageTitle from "../../components/pagetitle/PageTitle";
+import PageTitle from "../../components/Pagetitle/PageTitle";
 import CheckoutSection from '../../components/CheckoutSection'
-import Scrollbar from '../../components/scrollbar/scrollbar'
+import Scrollbar from '../../components/Scrollbar/scrollbar'
 import {connect} from "react-redux";
-import Footer from '../../components/footer/Footer';
+import Footer from '../../components/Footer/Footer';
 import logo from '../../public/images/logo-2.svg';
 
 const CheckoutPage =({cartList}) => {

@@ -2,11 +2,11 @@ import React, { Fragment } from 'react';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Navbar from '../../components/Navbar/Navbar'
-import PageTitle from '../../components/pagetitle/PageTitle'
+import PageTitle from '../../components/Pagetitle/PageTitle'
 import Projects from '../../mock-api/projects';
 import ServiceFrom from '../service-single/ServiceFrom';
-import Footer from '../../components/footer/Footer';
-import Scrollbar from '../../components/scrollbar/scrollbar'
+import Footer from '../../components/Footer/Footer';
+import Scrollbar from '../../components/Scrollbar/scrollbar'
 import logo from '../../public/images/logo-2.svg'
 import Psing1 from '/public/images/project-single/img-1.jpg'
 import Psing2 from '/public/images/project-single/img-2.jpg'

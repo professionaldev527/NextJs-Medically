@@ -12,8 +12,8 @@ import TeamSection from '../../components/TeamSection/TeamSection';
 import FunFact from '../../components/FunFact/FunFact';
 import BlogSection from '../../components/BlogSection/BlogSection';
 import CtafromSection from '../../components/CtafromSection/CtafromSection';
-import Footer from '../../components/footer/Footer';
-import Scrollbar from '../../components/scrollbar/scrollbar';
+import Footer from '../../components/Footer/Footer';
+import Scrollbar from '../../components/Scrollbar/scrollbar';
 
 import Logo from '../../public/images/logo-2.svg'
 

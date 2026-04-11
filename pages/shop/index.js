@@ -1,13 +1,13 @@
 import React, { Fragment, useState } from "react";
 import { connect } from "react-redux";
-import PageTitle from "../../components/pagetitle/PageTitle";
+import PageTitle from "../../components/Pagetitle/PageTitle";
 import { addToCart } from "../../store/actions/action";
 import ShopProduct from "../../components/ShopProduct";
 import api from "../../api";
 import Navbar from "../../components/Navbar/Navbar";
 import CtafromSection from "../../components/CtafromSection/CtafromSection";
-import Footer from "../../components/footer/Footer";
-import Scrollbar from "../../components/scrollbar/scrollbar";
+import Footer from "../../components/Footer/Footer";
+import Scrollbar from "../../components/Scrollbar/scrollbar";
 import Logo from "../../public/images/logo-2.svg";
 
 const ShopPage = ({ addToCart }) => {

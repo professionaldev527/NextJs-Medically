@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import Hero from '../../components/hero/hero';
 import AppointmentSection from '../../components/AppointmentSection/AppointmentSection';
 import ServiceSection from '../../components/ServiceSection/ServiceSection';
-import About from '../../components/about/about';
+import About from '../../components/About/about';
 import ProcessSection from '../../components/ProcessSection/ProcessSection';
 import ProjectSection from '../../components/ProjectSection/ProjectSection';
 import Testimonial from '../../components/Testimonial/Testimonial';
@@ -12,8 +12,8 @@ import TeamSection from '../../components/TeamSection/TeamSection';
 import FunFact from '../../components/FunFact/FunFact';
 import BlogSection from '../../components/BlogSection/BlogSection';
 import CtafromSection from '../../components/CtafromSection/CtafromSection';
-import Footer from '../../components/footer/Footer';
-import Scrollbar from '../../components/scrollbar/scrollbar';
+import Footer from '../../components/Footer/Footer';
+import Scrollbar from '../../components/Scrollbar/scrollbar';
 import Logo from '../../public/images/logo.svg'
 
 const HomePage = () => {

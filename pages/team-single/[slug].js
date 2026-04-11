@@ -3,10 +3,10 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Teams from '../../mock-api/team';
 import Navbar from '../../components/Navbar/Navbar'
-import PageTitle from '../../components/pagetitle/PageTitle'
-import Footer from '../../components/footer/Footer';
+import PageTitle from '../../components/Pagetitle/PageTitle'
+import Footer from '../../components/Footer/Footer';
 import ContactForm from '../service-single/ServiceFrom';
-import Scrollbar from '../../components/scrollbar/scrollbar';
+import Scrollbar from '../../components/Scrollbar/scrollbar';
 import logo from '../../public/images/logo-2.svg'
 import Arrow from '/public/images/team-single/arrow.svg'
 import Image from 'next/image';

@@ -1,15 +1,15 @@
 import React, { Fragment } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import PageTitle from '../../components/pagetitle/PageTitle'
-import About from '../../components/about/about';
+import PageTitle from '../../components/Pagetitle/PageTitle'
+import About from '../../components/About/about';
 import ProcessSection from '../../components/ProcessSection/ProcessSection';
 import FunFact from '../../components/FunFact/FunFact';
 import TeamSection from '../../components/TeamSection/TeamSection';
 import CtaSectionS2 from '../../components/CtaSectionS2/CtaSectionS2';
 import BlogSection from '../../components/BlogSection/BlogSection';
 import CtafromSection from '../../components/CtafromSection/CtafromSection';
-import Footer from '../../components/footer/Footer';
-import Scrollbar from '../../components/scrollbar/scrollbar';
+import Footer from '../../components/Footer/Footer';
+import Scrollbar from '../../components/Scrollbar/scrollbar';
 import Logo from '../../public/images/logo-2.svg'
 
 

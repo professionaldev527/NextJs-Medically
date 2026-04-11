@@ -10,8 +10,8 @@ import FunFactS2 from '../../components/FunFactS2/FunFactS2';
 import TeamSection from '../../components/TeamSection/TeamSection';
 import CtafromSection from '../../components/CtafromSection/CtafromSection';
 import BlogSection from '../../components/BlogSection/BlogSection';
-import Footer from '../../components/footer/Footer';
-import Scrollbar from '../../components/scrollbar/scrollbar';
+import Footer from '../../components/Footer/Footer';
+import Scrollbar from '../../components/Scrollbar/scrollbar';
 import Logo from '../../public/images/logo-2.svg'
 
 const HomePage2 = () => {

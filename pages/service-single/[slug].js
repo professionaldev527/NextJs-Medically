@@ -4,10 +4,10 @@ import Link from 'next/link'
 import Services from '../../mock-api/Services';
 import ServiceSidebar from './sidebar'
 import Navbar from '../../components/Navbar/Navbar'
-import PageTitle from '../../components/pagetitle/PageTitle'
-import Footer from '../../components/footer/Footer';
+import PageTitle from '../../components/Pagetitle/PageTitle'
+import Footer from '../../components/Footer/Footer';
 import ContactForm from './ServiceFrom';
-import Scrollbar from '../../components/scrollbar/scrollbar'
+import Scrollbar from '../../components/Scrollbar/scrollbar'
 import simg1 from '/public/images/service-single/img-1.jpg'
 import simg2 from '/public/images/service-single/img-2.jpg'
 import logo from '../../public/images/logo-2.svg'

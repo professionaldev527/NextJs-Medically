@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import PageTitle from '../../components/pagetitle/PageTitle'
+import PageTitle from '../../components/Pagetitle/PageTitle'
 import Error from '../../components/404/404'
-import Scrollbar from '../../components/scrollbar/scrollbar'
-import Footer from '../../components/footer/Footer';
+import Scrollbar from '../../components/Scrollbar/scrollbar'
+import Footer from '../../components/Footer/Footer';
 import Logo from '../../public/images/logo-2.svg'
 
 const ErrorPage =() => {
