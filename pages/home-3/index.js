@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import Navbar from '../../components/Navbar/Navbar'
-import Hero3 from '../../components/hero3/hero3';
+import Hero3 from '../../components/Hero3/hero3';
 import AppointmentSection from '../../components/AppointmentSection/AppointmentSection';
-import AboutS3 from '../../components/aboutS3/aboutS3.js';
+import AboutS3 from '../../components/AboutS3/aboutS3.js';
 import ProcessSection from '../../components/ProcessSection/ProcessSection';
 import ServiceSection from '../../components/ServiceSection/ServiceSection';
 import ProjectSection from '../../components/ProjectSection/ProjectSection';

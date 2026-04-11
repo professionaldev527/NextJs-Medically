@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import PageTitle from "../../components/Pagetitle/PageTitle";
 import { addToCart } from "../../store/actions/action";
 import ShopProduct from "../../components/ShopProduct";
-import api from "../../api";
+import api from "../../mock-api";
 import Navbar from "../../components/Navbar/Navbar";
 import CtafromSection from "../../components/CtafromSection/CtafromSection";
 import Footer from "../../components/Footer/Footer";

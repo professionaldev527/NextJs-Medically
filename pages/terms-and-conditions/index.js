@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/Pagetitle/PageTitle';
 import Footer from '../../components/Footer/Footer';
 import Scrollbar from '../../components/Scrollbar/scrollbar';
-import logo from '../../../public/images/logo-2.svg';
+import logo from '../../public/images/logo-2.svg';
 
 const TermsAndConditionsPage = () => {
     return (

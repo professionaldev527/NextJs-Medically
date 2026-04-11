@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import Hero2 from '../../components/hero2/Hero2';
+import Hero2 from '../../components/Hero2/Hero2';
 import ProcessSection from '../../components/ProcessSection/ProcessSection';
-import About2 from '../../components/about2/about2';
+import About2 from '../../components/About2/about2';
 import ServiceSection2 from '../../components/ServiceSection2/ServiceSection2';
 import ProjectSectionS2 from '../../components/ProjectSectionS2/ProjectSectionS2';
 import Testimonial from '../../components/Testimonial/Testimonial';

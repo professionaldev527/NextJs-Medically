@@ -6,7 +6,7 @@ import PageTitle from "../../components/Pagetitle/PageTitle";
 import Scrollbar from "../../components/Scrollbar/scrollbar";
 import { addToCart } from "../../store/actions/action";
 import Product from "./product";
-import api from "../../api";
+import api from "../../mock-api";
 import ProductTabs from "./alltab";
 import Footer from "../../components/Footer/Footer";
 import logo from "../../public/images/logo-2.svg";

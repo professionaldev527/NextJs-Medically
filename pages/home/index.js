@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Navbar from '../../components/Navbar/Navbar'
-import Hero from '../../components/hero/hero';
+import Hero from '../../components/Hero/hero';
 import AppointmentSection from '../../components/AppointmentSection/AppointmentSection';
 import ServiceSection from '../../components/ServiceSection/ServiceSection';
 import About from '../../components/About/about';
