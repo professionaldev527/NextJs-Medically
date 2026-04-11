@@ -445,7 +445,7 @@ const CheckoutSection = ({cartList}) => {
                                                         key={i}
                                                         className={`cardItem ${forms.card_type === item.title ? 'active' : null}`}
                                                         onClick={() => setForms({...forms, card_type: item.title})}>
-                                                        <Image src={item.img} alt={item.title}/>
+                                                        <Image src={item.img} alt={item.title} style={{ maxWidth: "100%", height: "auto" }}/>
                                                     </Grid>
                                                 ))}
                                             </Grid>

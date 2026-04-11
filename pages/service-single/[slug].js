@@ -31,17 +31,17 @@ const ServiceSinglePage = (props) => {
                     <div className="row g-0">
                         <div className="col-lg-8 col-12 service_content">
                             <div>
-                                <Image src={serviceDetails?.simage} alt="" />
+                                <Image src={serviceDetails?.simage} alt="" style={{ maxWidth: "100%", height: "auto" }} />
                                 <h2>{serviceDetails?.title}</h2>
                                 <p>{serviceDetails?.intro}</p>
                                 <p>{serviceDetails?.body}</p>
                             </div>
                             <div className="row">
                                 <div className="col-lg-6 col-12">
-                                    <Image src={simg1} alt="" />
+                                    <Image src={simg1} alt="" style={{ maxWidth: "100%", height: "auto" }} />
                                 </div>
                                 <div className="col-lg-6 col-12">
-                                    <Image src={simg2} alt="" />
+                                    <Image src={simg2} alt="" style={{ maxWidth: "100%", height: "auto" }} />
                                 </div>
                             </div>
                             <div>

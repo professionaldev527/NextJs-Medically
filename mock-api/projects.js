@@ -15,10 +15,10 @@ import p2img6 from '/public/images/project-single/6.jpg';
 const Projects = [
     {
         id: '1',
-        title: 'Heart Surgery Excellence Program',
+        title: 'Heart Surgery Excellence Institute',
         subtitle: 'Cardiovascular Surgery',
         docomunt: 'A fully integrated cardiac surgery program delivering life-saving open-heart and minimally invasive procedures with world-class outcomes.',
-        slug: 'Heart-Surgery-Excellence',
+        slug: 'Heart-Institute',
         pimg1: pimg1,
         pSimg: p2img1,
         location: 'Medically Cardiac Center, New York, NY',

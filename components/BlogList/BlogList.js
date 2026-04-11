@@ -20,7 +20,7 @@ const BlogList = (props) => {
                             {blogs.slice(0, 3).map((blog, bitem) => (
                                 <div className={`post  ${blog.blClass}`} key={bitem}>
                                     <div className="entry-media video-holder">
-                                        <Image src={blog.blogSingleImg} alt="" />
+                                        <Image src={blog.blogSingleImg} alt="" style={{ maxWidth: "100%", height: "auto" }} />
                                         <VideoModal />
                                     </div>
                                     <div className="entry-meta">
@@ -32,7 +32,7 @@ const BlogList = (props) => {
                                     </div>
                                     <div className="entry-details">
                                         <h3><Link onClick={ClickHandler} href={'/blog-single/[slug]'} as={`/blog-single/${blog.slug}`}>{blog.title2}</Link></h3>
-                                        <p>Law is a great career path if you want to build a broad skill set that includes everything from critical thinking and strategic planning to communications. If you love rising to a challenge.</p>
+                                        <p>{blog.description}</p>
                                         <Link onClick={ClickHandler} href={'/blog-single/[slug]'} as={`/blog-single/${blog.slug}`} className="read-more">READ MORE...</Link>
                                     </div>
                                 </div>

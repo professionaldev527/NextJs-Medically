@@ -35,7 +35,7 @@ const Header = (props) => {
                             <div className="col-lg-2 col-md-6 col-6">
                                 <div className="navbar-header">
                                     <Link onClick={ClickHandler} className="navbar-brand" href="/home"><Image src={props.Logo}
-                                        alt="logo" /></Link>
+                                        alt="logo" style={{ maxWidth: "100%", height: "auto" }} /></Link>
                                 </div>
                             </div>
                             <div className="col-lg-7 col-md-1 col-1">
@@ -77,7 +77,7 @@ const Header = (props) => {
                                             <Link onClick={ClickHandler} href="/project">Portfolio</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} href="/project">Portfolio</Link></li>
-                                                <li><Link onClick={ClickHandler} href="/project-single/Heart-Institure">Portfolio Single</Link></li>
+                                                <li><Link onClick={ClickHandler} href="/project-single/Heart-Institute">Portfolio Single</Link></li>
                                             </ul>
                                         </li>
                                         <li className="menu-item-has-children">

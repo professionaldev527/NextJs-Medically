@@ -1715,19 +1715,20 @@
 }
 
 /*3.12 ctafrom_section  */
-.ctafrom_section {
+.ctafrom_section,
+.ctafrom_section_s2 {
     position: relative;
     z-index: 1;
     margin-bottom: -180px;
 
-    @media (max-width:991px) {
+    @media (max-width: 991px) {
         margin-bottom: 80px;
     }
 }
 
 .cta_wrap {
     padding: 80px 70px;
-    background: url(/images/cta-bg.png) center /cover no-repeat;
+    background: url(/images/cta-bg.png) center / cover no-repeat;
     border-radius: 40px;
     position: relative;
     overflow: hidden;
@@ -1738,29 +1739,29 @@
         top: 0;
         width: 100%;
         height: 100%;
-        content: '';
+        content: "";
         background: $theme-primary-color;
         z-index: -1;
     }
 
-    @media (max-width:1199px) {
+    @media (max-width: 1199px) {
         padding: 50px 40px;
     }
 
-    @media (max-width:991px) {
+    @media (max-width: 991px) {
         padding: 50px 40px 20px;
     }
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
         padding: 50px 15px 50px;
     }
 
     .content {
-        max-width: 540px;
+        max-width: 800px;
         margin-bottom: 40px;
         margin-top: -20px;
 
-        @media (max-width:991px) {
+        @media (max-width: 991px) {
             margin: 0 auto;
             padding-left: 0px;
             margin-bottom: 40px;
@@ -1771,15 +1772,22 @@
         h2 {
             color: $white;
             font-size: 70px;
-            font-weight: 400;
+            font-weight: 700;
             line-height: 80px;
-            margin-bottom: 0px;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+            white-space: nowrap;
 
-            @media (max-width:991px) {
-                font-size: 50px;
-                line-height: 50px;
+            @media (max-width: 1199px) {
+                white-space: normal;
+                font-size: 60px;
+                line-height: 70px;
             }
 
+            @media (max-width: 991px) {
+                font-size: 55px;
+                line-height: 60px;
+            }
         }
 
         p {
@@ -1789,7 +1797,7 @@
             line-height: 32px;
             margin-bottom: 0;
 
-            @media (max-width:575px) {
+            @media (max-width: 575px) {
                 font-size: 16px;
             }
         }
@@ -1797,25 +1805,32 @@
 
     .cta_form {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
 
-        @media (max-width:991px) {
-            flex-wrap: wrap;
-            justify-content: center;
+        .cta-inputs-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            @media (max-width: 991px) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
 
         .input_filled {
             margin: 0 10px;
             width: 30%;
 
-            @media (max-width:991px) {
+            @media (max-width: 991px) {
                 width: 46%;
                 margin: 0 10px;
                 margin-bottom: 30px;
-
             }
 
-            @media (max-width:767px) {
+            @media (max-width: 767px) {
                 width: 100%;
                 margin: 0;
                 margin-bottom: 30px;
@@ -1829,16 +1844,20 @@
             select {
                 width: 100%;
                 color: $white;
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: 400;
-                border-radius: 20px;
-                background: rgb(255, 255, 255, 0.2);
-                padding: 14px 20px;
-                border: 0;
+                border-radius: 12px;
+                background: rgba(255, 255, 255, 0.15);
+                backdrop-filter: blur(5px);
+                padding: 18px 25px;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                transition: all 0.3s ease;
 
                 &:focus-visible {
-                    outline-offset: 0px;
-                    outline: 0;
+                    outline: none;
+                    background: rgba(255, 255, 255, 0.25);
+                    border-color: $white;
+                    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
                 }
             }
 
@@ -1846,27 +1865,88 @@
                 color: $heading-color;
             }
 
-
             button {
-                border: transparent;
+                border: none;
                 width: 100%;
-                height: 100%;
-                height: 55px;
-                border-radius: 20px;
-                background: #FFF;
-                color: #0077CA;
+                height: 65px;
+                border-radius: 12px;
+                background: $white;
+                color: #0077ca;
                 text-align: center;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 32px;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 65px;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
 
-                @media (max-width:575px) {
-                    font-size: 16px;
+                &:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+                    background: #f8fafc;
+                }
+
+                &:disabled {
+                    opacity: 0.7;
+                    cursor: not-allowed;
+                    transform: none;
+                }
+
+                @media (max-width: 575px) {
+                    font-size: 18px;
                 }
             }
         }
-        .error{
-            color: red;
+
+        .error {
+            color: #ffcccc;
+            font-size: 14px;
+            display: block;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        .status-message {
+            margin-top: 35px;
+            padding: 20px 30px;
+            border-radius: 12px;
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            width: 100%;
+            display: block;
+            clear: both;
+            animation: slideDown 0.5s ease-out forwards;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+                padding: 15px 20px;
+            }
+
+            &.success {
+                background: rgba(220, 252, 231, 0.95);
+                color: #065f46;
+                border: 2px solid #34d399;
+            }
+
+            &.error {
+                background: rgba(254, 226, 226, 0.95);
+                color: #991b1b;
+                border: 2px solid #f87171;
+            }
+        }
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 

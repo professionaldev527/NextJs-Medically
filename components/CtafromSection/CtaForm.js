@@ -42,30 +42,59 @@ const CtaForm = () => {
         return formIsValid;
 
     };
-    const handleSubmit = (e) => {
+    const [status, setStatus] = useState({ loading: false, message: '', type: '' });
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (validate()) {
-            console.log('Form submitted successfully:',);
+            setStatus({ loading: true, message: '', type: '' });
+            try {
+                const response = await fetch('/api/consultation', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData),
+                });
+                const result = await response.json();
+
+                if (response.ok) {
+                    setStatus({ loading: false, message: `Success! Your free consultation voucher for ${formData.company} has been sent to your email.`, type: 'success' });
+                    setFormData({ name: '', email: '', company: '' }); // Clear form
+                } else {
+                    setStatus({ loading: false, message: result.message, type: 'error' });
+                }
+            } catch (error) {
+                setStatus({ loading: false, message: 'Something went wrong. Please try again.', type: 'error' });
+            }
         }
     };
 
     return (
         <form className="cta_form" onSubmit={handleSubmit}>
-            <div className="input_filled">
-                <input type="text" name='name' value={formData.name} onChange={handleChange} placeholder="Your Name*" />
-                {errors.name && <span className='error'>{errors.name}</span>}
+            <div className="cta-inputs-container">
+                <div className="input_filled">
+                    <input type="text" name='name' value={formData.name} onChange={handleChange} placeholder="Your Name*" />
+                    {errors.name && <span className='error'>{errors.name}</span>}
+                </div>
+                <div className="input_filled">
+                    <input type="text" name="email" placeholder="Your Email*" value={formData.email} onChange={handleChange} />
+                    {errors.email && <span className="error">{errors.email}</span>}
+                </div>
+                <div className="input_filled">
+                    <input type="text" name="company" placeholder="Your Company*" value={formData.company} onChange={handleChange} />
+                    {errors.company && <span className="error">{errors.company}</span>}
+                </div>
+                <div className="input_filled">
+                    <button type="submit" disabled={status.loading}>
+                        {status.loading ? 'Sending...' : 'Free Consultancy'}
+                    </button>
+                </div>
             </div>
-            <div className="input_filled">
-                <input type="text" name="email" placeholder="Your Email*" value={formData.email} onChange={handleChange} />
-                {errors.email && <span className="error">{errors.email}</span>}
-            </div>
-            <div className="input_filled">
-                <input type="text" name="company" placeholder="Your Company*" value={formData.company} onChange={handleChange} />
-                {errors.company && <span className="error">{errors.company}</span>}
-            </div>
-            <div className="input_filled">
-                <button type="submit" >Free Consultancy</button>
-            </div>
+            
+            {status.message && (
+                <div className={`status-message ${status.type}`}>
+                    {status.type === 'success' ? '✔ ' : '✖ '} {status.message}
+                </div>
+            )}
         </form>
     );
 };
