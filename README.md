@@ -15,6 +15,14 @@
 </div>
 
 ---
+## 🚀 Live Demo
+
+You can explore the live application at the following links:
+
+*   **Primary Domain:** [medically.theprofdev.com](https://medically.theprofdev.com)
+*   **Vercel Deployment:** [Live Preview](https://next-js-medically-lmz19qoyb-kaushiks-projects-8172e5a3.vercel.app)
+
+---
 
 ## 🏥 Overview
 
